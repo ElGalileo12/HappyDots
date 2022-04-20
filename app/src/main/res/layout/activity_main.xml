@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Yellow_50"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/confeti"
+        android:layout_width="368dp"
+        android:layout_height="203dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="20dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/bth" />
+
+    <Button
+        android:id="@+id/turnOnBtn"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_width="242dp"
+        android:layout_marginLeft="65dp"
+        android:background="@drawable/bnt_dos"
+        android:text="Encender"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTex_indicator2" />
+
+    <Button
+        android:id="@+id/coneBtn"
+        android:layout_width="242dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/bnt_dos"
+        android:text="Disp. Vinculados"
+
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTex_indicator2" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="361dp"
+        android:layout_height="389dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="-20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/listdiseno"
+        android:padding="10dp" />
+
+
+</LinearLayout>

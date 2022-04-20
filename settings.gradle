@@ -1,0 +1,4 @@
+include ':bluetoothjhr'
+include ':bluetoothjhr'
+include ':app'
+rootProject.name = "PruebaBluetooth"

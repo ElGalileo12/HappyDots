@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/fondo"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".Matematico">
+
+    <!-- A CardView that contains a TextView -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view1"
+        android:layout_gravity="center"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        app:cardBackgroundColor="@color/Amber_50"
+        android:layout_marginTop="90dp"
+        app:cardCornerRadius="50dp">
+
+
+        <TextView
+            android:id="@+id/info_text"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/border_text"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:text="HOLA"
+            android:textColor="#DCEAEF"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <ImageView
+            android:id="@+id/escuadra"
+            android:layout_width="88dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="158dp"
+            app:srcCompat="@mipmap/gobernante" />
+
+        <ImageView
+            android:id="@+id/calcu"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="170dp"
+            android:layout_marginLeft="270dp"
+            app:srcCompat="@mipmap/calcular" />
+
+        <ImageView
+            android:id="@+id/lapiz"
+            android:layout_width="98dp"
+            android:layout_height="92dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="50dp"
+            app:srcCompat="@mipmap/lapiz" />
+
+        <ImageView
+            android:id="@+id/bbbb"
+            android:layout_width="74dp"
+            android:layout_height="76dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            app:srcCompat="@mipmap/bbbb" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/correcto"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginLeft="80dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/correcto" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/incorrecto"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginLeft="80dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/incorrect" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/confeti"
+            android:layout_width="382dp"
+            android:layout_height="510dp"
+            android:layout_marginTop="-80dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/confeti" />
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="50dp"
+        android:padding="15dp"
+        android:background="@drawable/bnt_dos"
+        android:text="Button"
+        android:textColor="@drawable/txt_btn_dos"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bnt_dos"
+        android:layout_marginTop="1dp"
+        android:padding="15dp"
+        android:text="Button"
+        android:textColor="@drawable/txt_btn_dos" />
+
+    <Button
+        android:id="@+id/siguiente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bnt_dos"
+        android:layout_marginTop="25dp"
+        android:padding="15dp"
+        android:text="Siguiente"
+        android:textColor="@drawable/txt_btn_dos" />
+
+    <TextView
+        android:id="@+id/contbuenas"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="-575dp"
+        android:layout_marginLeft="210dp"
+        android:background="@drawable/contador"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#DCEAEF"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/contmalas"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="-53dp"
+        android:layout_marginLeft="265dp"
+        android:background="@drawable/contmalas"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#DCEAEF"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:typeface="sans"  />
+
+    <TextView
+        android:id="@+id/a_real2"
+        android:layout_width="37dp"
+        android:layout_height="27dp"
+        android:layout_marginBottom="96dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="1"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</LinearLayout>
